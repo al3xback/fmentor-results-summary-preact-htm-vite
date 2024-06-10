@@ -1,0 +1,80 @@
+.result,
+.chart,
+.desc {
+	display: flex;
+	flex-direction: column;
+}
+
+.result {
+	align-items: center;
+	gap: 2.4rem;
+	padding: 3rem 4rem 4rem;
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: inherit;
+	color: #c8c7ff;
+	text-align: center;
+}
+
+.result h2 {
+	color: inherit;
+}
+
+.chart {
+	justify-content: center;
+	align-items: center;
+	width: 14rem;
+	height: 14rem;
+	padding: 2.4rem;
+	background-image: linear-gradient(
+		hsl(256, 72%, 46%),
+		hsla(241, 72%, 46%, 0)
+	);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.score {
+	font-size: 5.6rem;
+	color: #fff;
+}
+
+.chart span:last-child {
+	opacity: 0.5;
+}
+
+.desc {
+	gap: 1rem;
+}
+
+.desc h3 {
+	font-size: 2.4rem;
+	color: #fff;
+}
+
+@media (min-width: 48em) {
+	.result {
+		width: 50%;
+		padding: 4rem;
+	}
+
+	.result h2 {
+		font-size: 2.4rem;
+	}
+
+	.chart {
+		width: 20rem;
+		height: 20rem;
+	}
+
+	.score {
+		font-size: 7.2rem;
+	}
+
+	.desc {
+		max-width: 27rem;
+	}
+
+	.desc h3 {
+		font-size: 3.2rem;
+	}
+}
