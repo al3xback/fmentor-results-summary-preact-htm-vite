@@ -11,7 +11,7 @@ export default function Summary({ scores }) {
 					key=${score.id}
 					className=${`${styles.item} ${styles[`item-${score.id}`]}`}
 				>
-					<img width="20" height="20" src=${score.icon} alt="" />
+					<img src=${score.icon} width="20" height="20" alt="" />
 					<h3>${score.category}</h3>
 					<p>
 						<span>${score.value}</span>
