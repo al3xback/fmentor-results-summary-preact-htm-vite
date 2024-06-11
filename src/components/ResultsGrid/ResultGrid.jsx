@@ -8,7 +8,7 @@ import styles from './ResultsGrid.module.css';
 export default function ResultGrid() {
 	const mean = getMeanScore();
 
-	return html`<div className=${styles['results-grid']}>
+	return html`<div class=${styles['results-grid']}>
 		<${Result} mean=${mean} />
 		<${Summary} scores=${SCORES} />
 	</div>`;

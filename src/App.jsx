@@ -7,8 +7,8 @@ import Footer from './components/Footer/Footer.jsx';
 function App() {
 	return html`
 		<${Header} />
-		<main className="main">
-			<div className="container">
+		<main class="main">
+			<div class="container">
 				<${ResultGrid} />
 			</div>
 		</main>
