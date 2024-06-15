@@ -8,32 +8,32 @@ export const SCORES = [
 		id: 'reaction',
 		category: 'Reaction',
 		icon: reactionIcon,
-		value: 80
+		value: 80,
 	},
 	{
 		id: 'memory',
 		category: 'Memory',
 		icon: memoryIcon,
-		value: 92
+		value: 92,
 	},
 	{
 		id: 'verbal',
 		category: 'Verbal',
 		icon: verbalIcon,
-		value: 61
+		value: 61,
 	},
 	{
 		id: 'visual',
 		category: 'Visual',
 		icon: visualIcon,
-		value: 72
-	}
+		value: 72,
+	},
 ];
 
 export function getMeanScore() {
 	const scoresLength = SCORES.length;
 
 	return Math.floor(
-		SCORES.reduce((total, score) => total + score.value, 0) / scoresLength
+		SCORES.reduce((total, score) => total + score.value, 0) / scoresLength,
 	);
 }
